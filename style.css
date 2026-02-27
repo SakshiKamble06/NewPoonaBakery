@@ -58,6 +58,67 @@ nav{
      display: inline-block;
      margin-top: 50px;
 }
+/* Landing Section */
+.landing{
+    text-align:center;
+    color:white;
+    position: relative;
+}
+
+/* Animated Heading */
+.landing h1{
+    position: relative;
+    background-color: red;
+    font-size:50px;
+    margin-bottom:8px;
+    animation: slideDown 1.5s ease backwards;
+    opacity:0;
+    width: 300px;
+    padding: 10px 5px;
+}
+
+/* Paragraph */
+.landing p{
+    background-color: rgb(245, 245, 37);
+    position:relative;
+    font-size:18px;
+    margin-bottom:30px;
+    width: 250px;
+    animation: slideDown 1.5s ease backwards;
+    /* animation-direction: fadeIn ease-in forwards; */
+    /* animation-delay: 1s; */
+    opacity:0;
+    padding: 10px 5px;
+    
+}
+
+/* Animations */
+@keyframes slideDown{
+    from{
+        transform: translateY(-50px);
+        opacity:0;
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.divider1 {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(to right, #ccc 30%, orange 30%, orange 70%, #ccc 70%);
+    border-radius: 5px;
+
+}
 
 .card{
     position: relative;
@@ -77,9 +138,9 @@ text-align: center;
 color: black;
 
 }
-h4{
+.Gallery h5{
     text-transform:uppercase;
-    color:rgb(104, 79, 64);
+     color: rgb(94, 36, 36);
     
 }
 .card:hover img{ 
@@ -127,7 +188,7 @@ padding: 3px;
     margin:130px 0px;
 }
 .services{
-    display: grid;
+display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   text-align: center;
@@ -149,53 +210,84 @@ padding: 3px;
     color: rgb(94, 36, 36);
       text-transform: uppercase;
 }
-.map-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 ratio */
-}
-.map-container iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-/* .contact-section{
-    background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover no-repeat;
-    position: relative;
-    padding: 80px 0;
-}
+.map-section {
+      position: relative;
+      height: 600px;
+      margin-top: 10px;
+    }
 
-.contact-section::before{
-    content: "";
-    position: absolute;
-    top:0;
-    left:0;
-    width:100px;
-    height:100%;
-    background: rgba(60, 30, 20, 0.8);
-}
+.map-section iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
-.contact-box{
-    position: relative;
-    z-index: 1;
-    max-width: 600px;
-    margin: auto;
-}
+.contact-form {
+      position: absolute;
+      top: 50%;
+      margin-left: 315px;
+      transform: translateY(-50%);
+      background:  rgb(94, 36, 36);
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      height: 600px;
+      color: white;
+    }
 
-.form-control{
-    border-radius: 0;
-    padding: 12px;
-}
+.contact-form h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+  margin-left: 20%;
+    }
 
-.btn-custom{
-    background-color: #5a2d1d;
+.form-control {
+      margin-bottom: 15px;
+    }
+
+    @media(max-width:768px){
+      .contact-form{
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: -5px;
+        border-radius: 0;
+      }
+      .map-section{
+        height: auto;
+      }
+      .map-section iframe{
+        height: 400px;
+      }
+    }
+    /* Footer */
+    .firstdiv{
+        display: flex;
+        background-color: #303133;
+        color: #D6D8DB;
+    }
+    .content1{
+        margin: 15px 25px;
+    }
+    .firstdiv img{
+        padding: 30px;
+    }
+    .icon i {
+        margin: 30px 10px;
+       padding: 15px;
+        border-radius: 50%;
+        color: white;
+        border: 1px solid white;
+    }
+   .second{
+    background-color: #28292B;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   }
+   .white{
     color: white;
-    border-radius: 0;
+    margin: 30px 10px;
 }
-
-.btn-custom:hover{
-    background-color: #7a3e29;
+.second p {
+    color: white;
 }
-
-     */
