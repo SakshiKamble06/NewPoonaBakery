@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif
 }
 body{
     background-color: #93ac93;
@@ -45,72 +45,137 @@ nav{
 .logoDiv img{
     border-radius: 50%;
 }
-.carousel{
-    padding: 15px;
-    border-top: 4px solid rgb(45, 45, 45);
-    border-bottom: 4px solid rgb(45, 45, 45);
-}
+
 .borderRight{
     /* border-right: 1px solid gray; */
-    width: 2px;
-    height: 50px;
+    width: 1px;
+    height: 40px;
      background-color: gray;
      display: inline-block;
      margin-top: 50px;
 }
-/* Landing Section */
-.landing{
-    text-align:center;
-    color:white;
-    position: relative;
-}
-
-/* Animated Heading */
-.landing h1{
-    position: relative;
-    background-color: red;
-    font-size:50px;
-    margin-bottom:8px;
-    animation: slideDown 1.5s ease backwards;
-    opacity:0;
-    width: 300px;
-    padding: 10px 5px;
-}
-
-/* Paragraph */
-.landing p{
-    background-color: rgb(245, 245, 37);
-    position:relative;
-    font-size:18px;
-    margin-bottom:30px;
-    width: 250px;
-    animation: slideDown 1.5s ease backwards;
-    /* animation-direction: fadeIn ease-in forwards; */
-    /* animation-delay: 1s; */
-    opacity:0;
-    padding: 10px 5px;
+.carousel{
+    border-top: 4px solid rgb(45, 45, 45);
+    border-bottom: 4px solid rgb(45, 45, 45) ;
     
 }
+.carousel img{
+    height: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-/* Animations */
-@keyframes slideDown{
-    from{
-        transform: translateY(-50px);
-        opacity:0;
+}
+.red {
+    background-color: rgb(194, 12, 42);
+    height: 100px;
+    width: 400px;
+    padding: 20px;
+    font-size: 60px;
+    position: relative;
+    animation: slideUp 1s ease forwards;
+}
+
+.yellowdiv {
+    background-color: rgb(237, 191, 6);
+    height: 70px;
+    width: 320px;
+    padding: 15px;
+    font-size: 30px;
+    color: red;
+    position: relative;
+    animation: slideUp 1s ease forwards;
+
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0);
-        opacity:1;
+        opacity: 1;
     }
 }
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
+.red1 {
+    background-color: rgb(194, 12, 42);
+    height: 100px;
+    width: 600px;
+    padding: 16px;
+    font-size: 50px;
+    margin-left: 500px;
+    margin-bottom: 170px;
+    animation: slideRightToLeft 2s ease forwards;
+}
+
+@keyframes slideRightToLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
     }
-    to{
-        opacity:1;
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
+}
+
+.red3 {
+    background-color: rgb(194, 12, 42);
+    height: 100px;
+    width: 400px;
+    padding: 20px;
+    font-size: 60px;
+    position: relative;
+    animation: slideDown 1s ease forwards;
+}
+
+.yellowdiv3 {
+    background-color: rgb(237, 191, 6);
+    height: 70px;
+    width: 320px;
+    padding: 15px;
+    font-size: 30px;
+    color: red;
+    position: relative;
+    animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.red2 {
+    background-color: rgb(194, 12, 42);
+    height: 100px;
+    width: 500px;
+    padding: 20px;
+    font-size: 60px;
+    margin-left: 550px;
+    animation: slideDown 1s ease forwards;
+}
+
+
+.yellowdiv1 {
+    background-color: rgb(237, 191, 6);
+    height: 70px;
+    width: 450px;
+    padding: 15px;
+    font-size: 30px;
+    color: red;
+    margin-left: 600px;
+    margin-bottom: 100px;
+    animation: slideDown 1s ease forwards;
 }
 .divider1 {
     width: 200px;
@@ -273,8 +338,8 @@ display: grid;
         padding: 30px;
     }
     .icon i {
-        margin: 30px 10px;
-       padding: 15px;
+        margin: 30px 5px;
+       padding: 10px;
         border-radius: 50%;
         color: white;
         border: 1px solid white;
@@ -283,11 +348,22 @@ display: grid;
     background-color: #28292B;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    padding: 10px 20px;
    }
    .white{
     color: white;
-    margin: 30px 10px;
+    margin: 20px 5px;
+    font-weight: bold;
+    font-size: 17px;
 }
 .second p {
     color: white;
+    font-size: small;
+}
+.thirddiv{
+    background-color: #28292B;
+    text-align: center;
+    font-size: small;
+    color: white;
+    height: 20px;
 }
