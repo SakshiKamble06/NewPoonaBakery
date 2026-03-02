@@ -367,3 +367,14 @@ display: grid;
     color: white;
     height: 20px;
 }
+.offcanvas {
+    background-color: #684f40;
+}
+
+.offcanvas .nav-link {
+    color: white;
+}
+
+.offcanvas .nav-link:hover {
+    color: #f4a300;
+}
